@@ -1,6 +1,55 @@
 <html>
 <head>Hello!</head>
 <body>
-  <p> Hi there</p>
+  <div data-role="page" data-control-title="Home" data-theme="b" id="page1"
+style="background: url('http://www.ilikewallpaper.net/iphone-5-wallpapers/download/12279/Downtown-seattle-iphone-5-wallpaper-ilikewallpaper_com.jpg') no-repeat">
+    <div data-theme="b" data-role="header" data-position="fixed">
+        <h1 class="ui-title">
+            Homeful
+        </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <form action="">
+            <input type="hidden" name="Address" value="string">
+            <div class="ui-field-contain" data-controltype="textinput">
+                <label for="textinput2">
+                    address
+                </label>
+                <input name="Address" id="textinput2" placeholder="Address pls" value=""
+                type="text" data-mini="true">
+            </div>
+        </form>
+        <div class="ui-field-contain" data-controltype="selectmenu">
+            <label for="selectmenu3">
+                Rooms
+            </label>
+            <select id="selectmenu3" name="" data-mini="true">
+                <option value="option1">
+                    Room 1
+                </option>
+                <option value="option2">
+                    Room 2
+                </option>
+                <option value="option3">
+                    Room 3
+                </option>
+            </select>
+        </div>
+        <form action="">
+            <div class="ui-field-contain" data-controltype="textinput">
+                <label for="textinput3">
+                    Price
+                </label>
+                <input name="" id="textinput3" placeholder="$" value="" type="range" data-mini="true">
+            </div>
+        </form>
+        <div>
+            <a href="" target="_blank" data-transition="fade">
+                Help
+            </a>
+        </div>
+        <input type="submit" value="Search">
+    </div>
+</div>
 </body>
 </html>
