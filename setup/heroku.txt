@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#=========================
+# Install heroku toolbelt
+#=========================
+
+# https://devcenter.heroku.com/articles/getting-started-with-python#set-up
+heroku login
+
+#===========================
+# Create, scale, and deploy
+#===========================
+heroku apps:create ci-appone
+heroku addons:add heroku-postgresql
+heroku ps:scale web=1
+
+#=======================
+# Environment Variables
+#=======================
+heroku config:set SECRET_KEY=(NOT COMMITTED)
+
+#=======================
+# Commonly used commands
+#=======================
+# Updates the database 
+heroku run python manage.py syncdb
+
+##
+heroku run python manage.py shell

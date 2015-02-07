@@ -1,0 +1,50 @@
+#!/bin/bash
+
+#==========================================
+# Install Homebrew, Python, and Virtualenv
+#==========================================
+
+# http://docs.python-guide.org/en/latest/starting/install/osx/
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# add to path
+cat<<'EOT' | sed 's/^    //' > "~/.profile"
+    export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+EOT
+
+brew install python
+pip install virtualenv
+
+#====================
+# Install PostgreSQL
+#====================
+
+# http://www.postgresql.org/download/
+
+# Find directory where pg_config is located and add it to the temporary path
+# to be used in psycopg2 installation. Location varies by installation mathod
+# and version. psycopg2 is installed as part of django toolbelt
+# If you don't know where it is, use this to help:
+# http://stackoverflow.com/questions/21079820/how-to-find-pg-config-path
+sudo find / -name "pg_config" -print
+
+# Mine, on Mac OS X using the Graphical Installer was here:
+PATH=$PATH:/Library/PostgreSQL/9.3/bin/
+
+#================
+# Create project
+#================
+# https://devcenter.heroku.com/articles/getting-started-with-django
+
+# Start and activate a virtualenv
+virtualenv venv
+source venv/bin/activate
+
+# Make sure directory containing pg_config is on $PATH before this step
+pip install django-toolbelt
+
+django-admin.py startproject help_the_world .
+
+#=======================
+# Dependency management
+#=======================
+pip freeze > requirements.txt
