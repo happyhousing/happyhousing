@@ -42,7 +42,11 @@ source venv/bin/activate
 # Make sure directory containing pg_config is on $PATH before this step
 pip install django-toolbelt
 
+#======================
+One Time Project Setup
+#======================
 django-admin.py startproject help_the_world .
+python manage.py startapp homeful
 
 #============================
 # Install other dependencies
