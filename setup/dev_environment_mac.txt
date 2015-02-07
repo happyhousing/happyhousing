@@ -44,6 +44,12 @@ pip install django-toolbelt
 
 django-admin.py startproject help_the_world .
 
+#============================
+# Install other dependencies
+#============================
+pip install slumber
+pip install pyyaml
+
 #=======================
 # Dependency management
 #=======================
