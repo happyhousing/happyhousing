@@ -10,7 +10,7 @@ heroku login
 #===========================
 # Create, scale, and deploy
 #===========================
-heroku apps:create ci-appone
+heroku apps:create hh-helptheworld
 heroku addons:add heroku-postgresql
 heroku ps:scale web=1
 
