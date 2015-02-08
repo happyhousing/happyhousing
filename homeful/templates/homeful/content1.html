@@ -33,7 +33,7 @@
         var map = new google.maps.Map(document.getElementById('map-canvas'),
                                       mapOptions);
 
-        setMarkers(map, beaches);
+        setMarkers(map, properties_to_show);
       }
 
       /**
@@ -41,12 +41,10 @@
        * the order in which these markers should display on top of each
        * other.
        */
-      var beaches = [
-        ['Alki Beach', 47.581000, -122.406700, 4],
-        ['2 Beach', 46.981000, -122.259052, 5],
-        ['3 Beach', 47.028249, -122.157507, 3],
-        ['4 Beach', 47.80010128657071, -122.28747820854187, 2],
-      ['Maro Beach', 47.950198, -122.259302, 1]
+      var properties_to_show = [
+        {% for mfp in mfps %}
+          ['{{ mfp.name }}', {{ mfp.latitude }}, {{ mfp.longitude }}, 1],
+        {% endfor %}
       ];
 
       function setMarkers(map, locations) {
@@ -145,7 +143,7 @@
       <p>Properties</p>
       <div id="map-canvas">
       </div>
-      <p>Price range for {{ rooms }} bedrooms: {{ price_range }}</p>
+      <p>Price range for {{ rooms }} bedrooms: {{ price_range }} in {{ zipcode }}</p>
       {% for mfp in mfps %}
       <ul class="list-group">
         <li class="list-group-item">
