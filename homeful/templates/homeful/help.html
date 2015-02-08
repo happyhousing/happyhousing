@@ -1,0 +1,127 @@
+<<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+      Helpful Contacts
+    </title>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+    rel="stylesheet">
+    
+    <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(47.619604, -122.356277),
+          zoom: 13,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        
+        var myLatlng = new google.maps.LatLng(47.619604, -122.356277);
+        var marker = new google.maps.Marker({
+      	position: myLatlng,
+      	map: map,
+      title: 'Hello World!'
+  	  });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+  </head>
+  
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Happy Housing</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li  class="active">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!-- Main jumbotron for a primary marketing message or call to action
+    -->
+    <div class="jumbotron">
+      <form action="{% url 'homeful:list' %}" method="get">
+        {% csrf_token %}
+        <div class="container">
+          <h1>
+            Help
+          </h1>
+        </div>
+        <div class="form-group">
+          <label>
+            Seattle Housing Authority Housing Service Center
+          </label>
+        <P>Seattle Housing Authority's Housing Service Center accepts housing applications and offers free support to people applying to the agency's housing programs
+        
+        </div>
+        <div class="form-group">
+          <label>
+            Address
+          </label>
+          <p>190 Queen Anne Ave N<br>Seattle, WA 98109-1028
+        </div>
+        <div class="form-group">
+          <label>
+            Phone
+          </label>
+          <p>206-239-1737
+        </div>
+        <div class="form-group">
+          <label>
+            Office Hours
+          </label>
+          <p>Monday through Friday from 8 a.m. to 4:30 p.m.<BR>
+        </div>
+        <div class="form-group">
+          <label>
+            Website
+          </label>
+          <p><A HREF="http://www.seattlehousing.org/">http://www.seattlehousing.org/</A>
+        </div>
+		<div id="map-canvas"></div>
+      </form>
+    </div>
+    <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    >
+    </script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"
+    >
+    </script>
+  </body>
+
+</html>
+</body>
+</html>
