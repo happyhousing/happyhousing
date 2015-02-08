@@ -1,12 +1,14 @@
 # Zillow HackHouse Hackathon: Happy Housing
 
-The purpose of this app is to provide an example of how to best format an app submission on [Github](http://github.com) for a hackathon. If you'd like to suggest changes or improvements to this example, feel free to send me a pull request.
+The purpose of this app is to help recent immigrants of Seattle find affordable housing close to either their workplace, home, or preferred living location.
 
-This application was developed on February 5th, 2015 for the [Evergreen Awesome Hackthon](http://investors.zillow.com/releasedetail.cfm?ReleaseID=892685).
+This application was developed on from February 6, 2015 to February February 8, 2015 for the [Hack Housing: Empowering Smarter Decisions – A Weekend Hackathon](http://investors.zillow.com/releasedetail.cfm?ReleaseID=892685).
 
-![Isn't our app beautiful?!](screenshot.jpg)
+![Happy housing](screenshot.jpg)
 
-Our app is live at http://hh-helptheworld.herokuapp.com/homeful/. You can log in as the demo user "unicorns" with password "sartfarkles". You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
+Our app is live at http://hh-helptheworld.herokuapp.com/homeful/. 
+
+You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
 
 ## Challenge and Approach
 
