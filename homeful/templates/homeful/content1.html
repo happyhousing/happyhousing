@@ -33,7 +33,7 @@
         var map = new google.maps.Map(document.getElementById('map-canvas'),
                                       mapOptions);
 
-        setMarkers(map, properties_to_show);
+        setMarkers(map, beaches);
       }
 
       /**
@@ -41,10 +41,12 @@
        * the order in which these markers should display on top of each
        * other.
        */
-      var properties_to_show = [
-        {% for mfp in mfps %}
-          ['{{ mfp.name }}', {{ mfp.latitude }}, {{ mfp.longitude }}, 1],
-        {% endfor %}
+      var beaches = [
+        ['Alki Beach', 47.581000, -122.406700, 4],
+        ['2 Beach', 46.981000, -122.259052, 5],
+        ['3 Beach', 47.028249, -122.157507, 3],
+        ['4 Beach', 47.80010128657071, -122.28747820854187, 2],
+      ['Maro Beach', 47.950198, -122.259302, 1]
       ];
 
       function setMarkers(map, locations) {
@@ -97,6 +99,16 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
+        <div id="google_translate_element">
+    </div>
+    <script type="text/javascript" >
+        function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage:
+        'en', includedLanguages: 'en,es,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        multilanguagePage: true}, 'google_translate_element'); }
+      </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      >
+      </script>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -143,7 +155,7 @@
       <p>Properties</p>
       <div id="map-canvas">
       </div>
-      <p>Price range for {{ rooms }} bedrooms: {{ price_range }} in {{ zipcode }}</p>
+      <p>Price range for {{ rooms }} bedrooms: {{ price_range }}</p>
       {% for mfp in mfps %}
       <ul class="list-group">
         <li class="list-group-item">
