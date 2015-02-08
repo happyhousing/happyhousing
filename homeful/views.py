@@ -11,7 +11,7 @@ def index(request):
 def list(request):
     zipcode = request.GET['zipcode']
     rooms = request.GET['rooms']
-    price = request.GET['price']
+    #price = request.GET['price']
     context = {}
     
     fmrs = getSeattleFairMarketRents()
@@ -28,6 +28,7 @@ def list(request):
     
     context['mfps'] = mfps
     context['rooms'] = rooms
+    context['zipcode'] = zipcode
     
     estimated_price = seattle_fmr[rooms + 'br']
     price_range_max = estimated_price + (estimated_price*.12)
