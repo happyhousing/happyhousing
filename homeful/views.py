@@ -8,6 +8,10 @@ def index(request):
     context = {}
     return render(request, 'homeful/index.html', context)
 
+def help(request):
+    context = {}
+    return render(request, 'homeful/help.html', context)
+
 def list(request):
     zipcode = request.GET['zipcode']
     rooms = request.GET['rooms']
