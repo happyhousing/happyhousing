@@ -1,12 +1,12 @@
-# Evergreen Awesome Hackathon: My Sample App
+# Zillow HackHouse Hackathon: Happy Housing
 
 The purpose of this app is to provide an example of how to best format an app submission on [Github](http://github.com) for a hackathon. If you'd like to suggest changes or improvements to this example, feel free to send me a pull request.
 
-This application was developed on February 5th, 2015 for the [Evergreen Awesome Hackthon](http://example.com/this-goes-nowhere).
+This application was developed on February 5th, 2015 for the [Evergreen Awesome Hackthon](http://investors.zillow.com/releasedetail.cfm?ReleaseID=892685).
 
 ![Isn't our app beautiful?!](screenshot.jpg)
 
-Our app is live at http://example.com/awesome-app-that-doesnt-exist. You can log in as the demo user "unicorns" with password "sartfarkles". You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
+Our app is live at http://hh-helptheworld.herokuapp.com/homeful/. You can log in as the demo user "unicorns" with password "sartfarkles". You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
 
 ## Challenge and Approach
 
@@ -24,17 +24,17 @@ Once we did that, we knew we were guaranteed to win!
 
 Our team is comprised of:
 
-- [@chrismetcalf](http://github.com/chrismetcalf) - README.md author and all around awesome guy
-- [@torvalds](http://github.com/torvalds) - Wrangler of penguins
-- [@matz](http://github.com/matz) - Miner of Rubies
-- [@gvanrossum](http://github.com/gvanrossum) - Python charmer
+- [@qayshp](http://github.com/qayshp) - yep
+- [@YasharF](http://github.com/YasharF) - more!
+- [@ega123](http://github.com/ega123) - and more!
+- [@alyeung](http://github.com/alyeung) - and still more!
+- [Tuvshin](http://github.com/JFKHD!!!!!#*!) - and even more still!
 
 ## Technologies, APIs, and Datasets Utilized
 
 We made use of:
 
-- Hand harvested unicorn tears. Unicorns are very happy creatures, its hard to make them cry.
-- [mod_bf](http://modbf.sourceforge.net/)
+- [django](http://djangoproject.com)
 - The [Top 1,000 Songs To Hear Before You Die](https://opendata.socrata.com/Fun/Top-1-000-Songs-To-Hear-Before-You-Die/ed74-c6ni) dataset and [API](http://dev.socrata.com/foundry/#/opendata.socrata.com/ed74-c6ni)
 
 ## Contributing
