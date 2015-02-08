@@ -137,16 +137,20 @@
       <p>Properties</p>
       <div id="map-canvas">
       </div>
-      <p>Price range for {{ rooms }} bedrooms: {{ price_range }} in {{ zipcode }}</p>
+      <p><img src="https://raw.githubusercontent.com/happyhousing/happyhousing/master/homeful/media/images/hackhousing_dollar.png" />
+        Price range for {{ rooms }} bedrooms: {{ price_range }} in {{ zipcode }}</p>
       {% for mfp in mfps %}
       <ul class="list-group">
         <li class="list-group-item">
+          <img src="https://raw.githubusercontent.com/happyhousing/happyhousing/master/homeful/media/images/hackhousing_apartment.png" />
           Name: {{ mfp.name }}
         </li>
         <li class="list-group-item">
+          <img src="https://raw.githubusercontent.com/happyhousing/happyhousing/master/homeful/media/images/Hackhousing_map.png" />
           Address: {{ mfp.address }}
         </li>
         <li class="list-group-item">
+          <img src="https://raw.githubusercontent.com/happyhousing/happyhousing/master/homeful/media/images/hackhousing_phone.png" />
           Phone: {{ mfp.phone }}
         </li>
       </ul>
