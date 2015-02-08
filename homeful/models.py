@@ -30,8 +30,8 @@ class MultiFamilyProperty(models.Model):
     city = models.CharField(max_length=30)
     state = models.CharField(max_length=30)
     zipcode = models.CharField(max_length=30)
-    latitude = models.FloatField
-    longitude = models.FloatField
+    latitude = models.FloatField()
+    longitude = models.FloatField()
     property_name = models.CharField(max_length=30)
     phone_number = models.CharField(max_length=30)
 
