@@ -4,7 +4,7 @@ The purpose of this app is to help recent immigrants of Seattle find affordable 
 
 This application was developed on from February 6, 2015 to February February 8, 2015 for the [Hack Housing: Empowering Smarter Decisions – A Weekend Hackathon](http://investors.zillow.com/releasedetail.cfm?ReleaseID=892685).
 
-![Happy housing](https://github.com/happyhousing/happyhousing/blob/master/homeful/templates/homeful/Happyhousing_logo.png)
+![Happy housing](https://github.com/happyhousing/happyhousing/blob/master/homeful/media/images/Happyhousing_logo.png)
 
 Our app is live at http://hh-helptheworld.herokuapp.com/homeful/. 
 
