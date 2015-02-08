@@ -1,6 +1,5 @@
 from django.shortcuts import render
 import logging
-import utils
 
 logger = logging.getLogger(__name__)
 
