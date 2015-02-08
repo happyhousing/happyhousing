@@ -8,6 +8,6 @@ def index(request):
     context = {}
     return render(request, 'homeful/index.html', context)
 
-def test(request):
+def list(request):
     context = {}
-    return render(request, 'homeful/test.html', context)
+    return render(request, 'homeful/content1.html', context)
