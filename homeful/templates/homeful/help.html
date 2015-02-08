@@ -72,46 +72,60 @@
     <!-- Main jumbotron for a primary marketing message or call to action
     -->
     <div class="jumbotron">
-      <form action="{% url 'homeful:list' %}" method="get">
-        {% csrf_token %}
-        <div class="container">
-          <h1>
-            Help
-          </h1>
-        </div>
-        <div class="form-group">
-          <label>
-            Seattle Housing Authority Housing Service Center
-          </label>
-        <P>Seattle Housing Authority's Housing Service Center accepts housing applications and offers free support to people applying to the agency's housing programs
-        
-        </div>
-        <div class="form-group">
-          <label>
-            Address
-          </label>
-          <p>190 Queen Anne Ave N<br>Seattle, WA 98109-1028
-        </div>
-        <div class="form-group">
-          <label>
-            Phone
-          </label>
-          <p>206-239-1737
-        </div>
-        <div class="form-group">
-          <label>
-            Office Hours
-          </label>
-          <p>Monday through Friday from 8 a.m. to 4:30 p.m.<BR>
-        </div>
-        <div class="form-group">
-          <label>
-            Website
-          </label>
-          <p><A HREF="http://www.seattlehousing.org/">http://www.seattlehousing.org/</A>
-        </div>
-		<div id="map-canvas"></div>
-      </form>
+      <div class="container">
+        <h1>
+          About Us &nbsp;&nbsp;
+          <img src="https://raw.githubusercontent.com/happyhousing/happyhousing/master/homeful/media/images/Happyhousing_logo.png" width="200"/>
+        </h1>
+      </div>
+      <div class="form-group">
+        <label>
+          Who we are:
+        </label>
+      <p>We are a small team building things to help people find resources for housing.<br />
+        Qays Poonawala<br />
+        Yashar Fakhari<br />
+        Shiirevjamts Munkhbat<br />
+        Allan Yeung<br />
+        Tuvshin Erdenebaatar</p>
+      </div>
+      <div class="container">
+        <h1>
+          Where to get in person help
+        </h1>
+      </div>
+      <div class="form-group">
+        <label>
+          Seattle Housing Authority Housing Service Center
+        </label>
+      <p>Seattle Housing Authority's Housing Service Center accepts housing applications and offers free support to people applying to the agency's housing programs</p>
+      
+      </div>
+      <div class="form-group">
+        <label>
+          Address
+        </label>
+        <p>190 Queen Anne Ave N<br>Seattle, WA 98109-1028
+      </div>
+      <div class="form-group">
+        <label>
+          Phone
+        </label>
+        <p>206-239-1737
+      </div>
+      <div class="form-group">
+        <label>
+          Office Hours
+        </label>
+        <p>Monday through Friday from 8 a.m. to 4:30 p.m.<BR>
+      </div>
+      <div class="form-group">
+        <label>
+          Website
+        </label>
+        <p><A HREF="http://www.seattlehousing.org/">http://www.seattlehousing.org/</A>
+      </div>
+      <div id="map-canvas"></div>
     </div>
     <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
