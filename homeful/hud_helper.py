@@ -4,7 +4,7 @@ import json
 SEATTLE_FAIR_MARKET_RENTS_URL = 'http://services.arcgis.com/VTyQ9soqVukalItT/arcgis/rest/services/FairMarketRents/FeatureServer/0/query?where=&objectIds=&time=&geometry=%7B%22xmin%22%3A-13721209.831341939%2C%22ymin%22%3A6018679.182711435%2C%22xmax%22%3A-13514676.980915314%2C%22ymax%22%3A6064541.399682558%2C%22spatialReference%22%3A%7B%22wkid%22%3A102100%7D%7D&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Meter&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&quantizationParameters=&f=pjson&token='
 SEATTLE_MULTI_FAMILY_PROPERTIES = 'http://services.arcgis.com/VTyQ9soqVukalItT/arcgis/rest/services/MultiFamilyProperties/FeatureServer/0/query?where=&objectIds=&time=&geometry=%7B%22xmin%22%3A-13721209.831341939%2C%22ymin%22%3A6018679.182711435%2C%22xmax%22%3A-13514676.980915314%2C%22ymax%22%3A6064541.399682558%2C%22spatialReference%22%3A%7B%22wkid%22%3A102100%7D%7D&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Meter&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&quantizationParameters=&f=pjson&token='
 
-def populateSeattleFairMarketRents():
+def getSeattleFairMarketRents():
     list_of_fair_market_rents = requests.get(SEATTLE_FAIR_MARKET_RENTS_URL).json().get(u'features')
     fmrs = list()
     for fair_market_rents in list_of_fair_market_rents:
@@ -21,7 +21,7 @@ def populateSeattleFairMarketRents():
         fmrs.append(fmr)
     return fmrs
 
-def populateSeattleMultiFamilyProperties():
+def getSeattleMultiFamilyProperties():
     list_of_multi_family_properties = requests.get(SEATTLE_MULTI_FAMILY_PROPERTIES).json().get(u'features')
     mfps = list()
     for multi_family_property in list_of_multi_family_properties:
