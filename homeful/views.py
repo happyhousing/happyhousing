@@ -24,6 +24,8 @@ def list(request):
         if fmr['area'] == u'Seattle-Bellevue, WA HUD Metro FMR Area':
             seattle_fmr = fmr
     
+    mfps = filterByZipcode(zipcode, mfps)
+    
     context['mfps'] = mfps
     context['rooms'] = rooms
     
@@ -33,3 +35,8 @@ def list(request):
     context['price_range'] = "$" + "{0:.2f}".format(price_range_min) + " - $" + "{0:.2f}".format(price_range_max)
     
     return render(request, 'homeful/content1.html', context)
+
+def filterByZipcode(zipcode, mfps):
+    def myfilter(mfp):
+        return mfp['zipcode'] == zipcode
+    return filter(myfilter, mfps)
