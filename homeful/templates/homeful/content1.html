@@ -134,6 +134,7 @@
       <p>Properties</p>
       <div id="map-canvas">
       </div>
+      <p>Price range for {{ rooms }} bedrooms: {{ price_range }}</p>
       {% for mfp in mfps %}
       <ul class="list-group">
       <script type="text/javascript" >
@@ -152,9 +153,6 @@
         </li>
         <li class="list-group-item">
           Phone: {{ mfp.phone }}
-        </li>
-        <li class="list-group-item">
-          Number of Rooms: {{ "" }}
         </li>
       </ul>
       {% endfor %}

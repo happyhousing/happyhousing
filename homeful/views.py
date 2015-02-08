@@ -19,7 +19,17 @@ def list(request):
     
     # modify FMRs and MFPs based on request HERE
     
-    context['fmrs'] = fmrs
+    seattle_fmr = dict()
+    for fmr in fmrs:
+        if fmr['area'] == u'Seattle-Bellevue, WA HUD Metro FMR Area':
+            seattle_fmr = fmr
+    
     context['mfps'] = mfps
+    context['rooms'] = rooms
+    
+    estimated_price = seattle_fmr[rooms + 'br']
+    price_range_max = estimated_price + (estimated_price*.12)
+    price_range_min = estimated_price - (estimated_price*.12)
+    context['price_range'] = "$" + "{0:.2f}".format(price_range_min) + " - $" + "{0:.2f}".format(price_range_min)
     
     return render(request, 'homeful/content1.html', context)
