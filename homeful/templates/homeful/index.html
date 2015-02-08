@@ -68,7 +68,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action
     -->
     <div class="jumbotron">
-      <form action="{% url 'homeful:list' question.id %}" method="get">
+      <form action="{% url 'homeful:list' %}" method="get">
         {% csrf_token %}
         <div class="container">
           <h1>
