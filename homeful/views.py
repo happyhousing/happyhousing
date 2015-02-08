@@ -30,6 +30,6 @@ def list(request):
     estimated_price = seattle_fmr[rooms + 'br']
     price_range_max = estimated_price + (estimated_price*.12)
     price_range_min = estimated_price - (estimated_price*.12)
-    context['price_range'] = "$" + "{0:.2f}".format(price_range_min) + " - $" + "{0:.2f}".format(price_range_min)
+    context['price_range'] = "$" + "{0:.2f}".format(price_range_min) + " - $" + "{0:.2f}".format(price_range_max)
     
     return render(request, 'homeful/content1.html', context)
