@@ -1,11 +1,12 @@
 # Zillow HackHouse Hackathon: Happy Housing
 
+![Happy housing](https://github.com/happyhousing/happyhousing/blob/master/homeful/media/images/Happyhousing_logo.png)
+
 The purpose of this app is to help recent immigrants of Seattle find affordable housing close to either their workplace, home, or preferred living location.
 
 This application was developed on from February 6, 2015 to February February 8, 2015 for the [Hack Housing: Empowering Smarter Decisions – A Weekend Hackathon](http://investors.zillow.com/releasedetail.cfm?ReleaseID=892685).
 
-![Happy housing](https://github.com/happyhousing/happyhousing/blob/master/homeful/media/images/Happyhousing_logo.png)
-
+![Screen Shot](https://github.com/happyhousing/happyhousing/blob/master/homeful/media/images/Screen%20Shot%202015-02-08%20at%201.03.34%20PM.png)
 Our app is live at http://hh-helptheworld.herokuapp.com/homeful/. 
 
 ## Challenge and Approach
