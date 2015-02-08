@@ -12,6 +12,7 @@ cat<<'EOT' | sed 's/^    //' > "~/.profile"
 EOT
 
 brew install python
+# On Ubuntu in addition to python, also install python-dev
 pip install virtualenv
 
 #====================
@@ -29,6 +30,7 @@ sudo find / -name "pg_config" -print
 
 # Mine, on Mac OS X using the Graphical Installer was here:
 PATH=$PATH:/Library/PostgreSQL/9.3/bin/
+# On Ubuntu 14.04, pg_config is already on the path at /usr/bin
 
 #================
 # Create project
