@@ -4,11 +4,9 @@ The purpose of this app is to help recent immigrants of Seattle find affordable 
 
 This application was developed on from February 6, 2015 to February February 8, 2015 for the [Hack Housing: Empowering Smarter Decisions – A Weekend Hackathon](http://investors.zillow.com/releasedetail.cfm?ReleaseID=892685).
 
-![Happy housing](screenshot.jpg)
+![Happy housing](https://github.com/happyhousing/happyhousing/blob/master/homeful/templates/homeful/Happyhousing_logo.png)
 
 Our app is live at http://hh-helptheworld.herokuapp.com/homeful/. 
-
-You can also check out [this demo screencast](https://www.youtube.com/watch?v=dQw4w9WgXcQ) of our application on YouTube.
 
 ## Challenge and Approach
 
@@ -16,28 +14,39 @@ Our submission is for [Challenge #3: Build an app that provides an example of an
 
 Our approach for satisfying this challenge was to:
 
-- Develop an example Git repository
-- Share it on Github
-- Collect feedback from the community
-
-Once we did that, we knew we were guaranteed to win!
+- Analyze current low income housing opportunities such as HUD, Seattle public housing, and Section 8.
+- for much of these opportunities we realize that there is a waiting list.
+- We identified that our customers would like recommendations on housing near their work or home.
+- The application can be customize to their preferred language
+- We pulled from the [Multi Family Data](http://zillowhack.hud.opendata.arcgis.com/datasets/c55eb46fbc3b472cabd0c2a41f805261_0)
+- We pulled from the [Fair Market Rent Data](http://zillowhack.hud.opendata.arcgis.com/datasets/e29dca94b6924766a124d7c767e03b75_0)
+- We use the FMR to give the search an idea of the price range for the apartments
+- We use the multi-family data to provide contact information and addresses to allow in person or telephone contact.
 
 ## Team Members
 
 Our team is comprised of:
 
-- [@qayshp](http://github.com/qayshp) - yep
-- [@YasharF](http://github.com/YasharF) - more!
-- [@ega123](http://github.com/ega123) - and more!
-- [@alyeung](http://github.com/alyeung) - and still more!
-- [Tuvshin](http://github.com/JFKHD!!!!!#*!) - and even more still!
+- [@qayshp](http://github.com/qayshp) - Qays Poonawala
+- [@YasharF](http://github.com/YasharF) - Yashar Fakhari
+- [@ega123](http://github.com/ega123) - Shiirevjamts Munkhbat
+- [@alyeung](http://github.com/alyeung) - Allan Yeung
+- [Tuvshin](http://github.com/JFKHD!!!!!#*!) - Tuvshin Erdenebaatar
 
 ## Technologies, APIs, and Datasets Utilized
 
 We made use of:
 
 - [django](http://djangoproject.com)
-- The [Top 1,000 Songs To Hear Before You Die](https://opendata.socrata.com/Fun/Top-1-000-Songs-To-Hear-Before-You-Die/ed74-c6ni) dataset and [API](http://dev.socrata.com/foundry/#/opendata.socrata.com/ed74-c6ni)
+- python request library
+- Heroku
+- JSON library
+- [Google Maps](https://mapsengine.google.com/map/u/0/)
+- HTML5
+- [JetStrap](https://jetstrap.com)
+
+- [Multi Family Data](http://zillowhack.hud.opendata.arcgis.com/datasets/c55eb46fbc3b472cabd0c2a41f805261_0)
+- [Fair Market Rent Data](http://zillowhack.hud.opendata.arcgis.com/datasets/e29dca94b6924766a124d7c767e03b75_0)
 
 ## Contributing
 
