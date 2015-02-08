@@ -1,0 +1,51 @@
+<html>
+<head></head>
+<body>
+
+	<div role="main" class="ui-content">
+		<div id="googlemapsjs2" class="google-map" style="width: 288px; height: 200px; margin-left: auto; margin-right: auto">
+		</div>
+		<form action="">
+
+			<div class="ui-field-contain" data-controltype="textinput">
+				<label for="textinput8">
+					name
+				</label>
+				<input name="" id="textinput8" placeholder="" value="" type="text">
+			</div>
+		</form>
+		<form action="">
+			<div class="ui-field-contain" data-controltype="textinput">
+				<label for="textinput9">
+					address
+				</label>
+				<input name="" id="textinput9" placeholder="" value="" type="text">
+			</div>
+		</form>
+		<form action="">
+			<div class="ui-field-contain" data-controltype="textinput">
+				<label for="textinput11">
+					phone
+				</label>
+				<input name="" id="textinput11" placeholder="" value="" type="text">
+			</div>
+			<form action="">
+				<div class="ui-field-contain" data-controltype="textinput">
+					<label for="textinput13">
+						# of rooms
+					</label>
+					<input name="" id="textinput13" placeholder="" value="" type="text">
+				</div>
+			</form>
+		</form>
+		<div data-controltype="textblock">
+			<p>
+				<b>
+					approximate price
+				</b>
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
