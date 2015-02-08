@@ -68,53 +68,54 @@
     <!-- Main jumbotron for a primary marketing message or call to action
     -->
     <div class="jumbotron">
-      <div class="container">
-        <h1>
-          Happy Housing
-        </h1>
-      </div>
-      <div class="form-group">
-        <label>
-          Zipcode
-        </label>
-        <input type="text" class="form-control" placeholder="98101" name="">
-      </div>
-      <div class="form-group">
-        <label>
-          Number of Rooms
-        </label>
-        <select class="form-control">
-          <option value="studio">
-            Studio
-          </option>
-          <option value="1br">
-            1 Bedroom
-          </option>
-          <option value="2br">
-            2 Bedrooms
-          </option>
-          <option value="3br">
-            3 Bedrooms
-          </option>
-          <option value="4br">
-            4 Bedrooms
-          </option>
-        </select>
-      </div>
-      <form>
+      <form action="{% url 'homeful:list' question.id %}" method="get">
+        {% csrf_token %}
+        <div class="container">
+          <h1>
+            Happy Housing
+          </h1>
+        </div>
+        <div class="form-group">
+          <label>
+            Zipcode
+          </label>
+          <input type="text" class="form-control" placeholder="98101" name="zipcode">
+        </div>
+        <div class="form-group">
+          <label>
+            Number of Rooms
+          </label>
+          <select class="form-control" name="rooms">
+            <option value="0">
+              Studio
+            </option>
+            <option value="1">
+              1 Bedroom
+            </option>
+            <option value="2">
+              2 Bedrooms
+            </option>
+            <option value="3">
+              3 Bedrooms
+            </option>
+            <option value="4">
+              4 Bedrooms
+            </option>
+          </select>
+        </div>
         <div class="form-group">
           <label>
             Price
           </label>
           <input type="text" class="form-control" placeholder="$" name="">
         </div>
+        <div>
+          <a href="#" class="btn btn-default">Help</a>
+        </div>
+        <button type="submit" class="btn pull-right btn-lg btn-primary">
+          Search!
+        </button>
       </form>
-      <div>
-        <a href="#" class="btn btn-default">Help</a>
-      </div>
-      <button type="submit" class="btn pull-right btn-lg btn-primary">
-        Search!
-      </button>
     </div>
     <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
